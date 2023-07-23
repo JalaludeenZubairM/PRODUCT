@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+.images{
+    float: right;
+    width:50vw;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 350px;
+    height:350px;
+}
+.hidden{
+    display: none;
+}
+.active{  
+    display:block;
+}
+.button{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:99vw;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.bx{
+    font-size: 50px;
+}
+header{
+    width:100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width:30px;
+    height: 30px;
+}
+.title{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.article{
+    float: left;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 20px 100px;  
+}
+section{
+    position: absolute;
+    width:100vw;
+    height: 90vh;     
+}
+.buy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:0px 20px;
+    border-radius: 20px;
+}
+.buy:hover{
+    box-shadow: 2px 2px 20px 10px  #a3e4d7 ;
+}
+#home-section{
+    display: flex;
+}
+.title nav{
+    padding-bottom: 5px;
+}
+.title nav:hover{
+    cursor: pointer;
+    border-bottom: 2px solid whitesmoke;
+    transition: border-bottom 10s ease-in-out;
+}
+@media only screen and (max-width:962px){
+    .article{
+        float: left;
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+        padding: 20px 50px;  
+    }
+    .images{
+        float: right;
+        width:60vw;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img{
+        width: 150px;
+        height:150px;
+    }  
+}
